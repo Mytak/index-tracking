@@ -1,40 +1,23 @@
-**Interested in contributing a code example?** 
-
-Please take a look at our [contribution guidelines](CONTRIBUTING.md) before
-getting started. Thanks!
-
-<!-- Before submitting your code, please delete the above code contribution
-instructions and this comment as they will not be relevant in your code 
-example README.md.-->
-
-# <demo_name>
-
-Describe your example and specify what it is demonstrating. Consider the
-following questions:
-
-* Is it pedagogical or a usable application?
-* Does it belong to a particular domain such as material simulation or logistics? 
-* What level of Ocean proficiency does it target (beginner, advanced, pro)? 
-
-A clear description allows us to properly categorize your example.
-
-Images are encouraged. If your example produces a visualization, consider
-displaying it here.
+# Financial Index Tracker
+Tracking financial indexes is a key application of portfolio optimization, particularly when dealing with indexes that include hundreds or thousands of assets. To make portfolio management more feasible, the goal is often to replicate the index using a smaller, more manageable subset of assets, which is known as applying cardinality constraints. This form of constrained portfolio optimization is highly complex, and conventional algorithms frequently struggle to find suitable solutions.
+This project formulates the index tracking problem as a QUBO (Quadratic Unconstrained Binary Optimization) and uses quantum optimization to minimize tracking error while handling real-world constraints. 
+Ideal for experimenting with quantum computing in financial optimization.
+This is a usable application designed to optimize index tracking portfolios using D-Wave’s quantum annealers, though it can also serve a pedagogical purpose for users learning about quantum computing in finance.
+It targets advanced users who are familiar with optimization problems, portfolio management, and have a solid understanding of D-Wave’s Ocean tools, though it could also serve as a learning tool for motivated beginners.
 
 ![D-Wave Logo](dwave_logo.png)
 
 ## Usage
 
-A simple command that runs your program. For example,
-
 ```bash
-python <demo_name>.py
+python financial_index_tracker.py
 ```
 
 ### Inputs
-If your example requires user input, make sure to specify the input format and any input limitations.
+Financial index to track, for example NASDAQ
+
 ### Outputs
-An example program output.
+Cardinality constraints = Limited subset of assets which replicate the financial index performance
 
 ## Problem Description 
 
@@ -83,9 +66,8 @@ Note: there is no need to repeat everything that is already well-documented in
 the code.
 
 ## References
-
-A. Person, "Title of Amazing Information", [short link
-name](https://example.com/)
+Samuel Palmer, Konstantinos Karagiannis, Adam Florence, Asier Rodriguez, Román Orús, Harish Naik, Samuel Mugel, 
+"Financial Index Tracking via Quantum Computing with Cardinality Constraints", https://ar5iv.labs.arxiv.org/html/2208.11380
 
 ## License
 
